@@ -2,11 +2,10 @@
 
 
 #include "Types/StructTypes.h"
+#include "AbilitySystem/Abilities/C_PlayerGameplayAbility.h"
 
-StructTypes::StructTypes()
-{
-}
 
-StructTypes::~StructTypes()
+bool FPlayerAbilitySet::IsValid() const
 {
+    return InputTag.IsValid() && AbilityToGrant;
 }
