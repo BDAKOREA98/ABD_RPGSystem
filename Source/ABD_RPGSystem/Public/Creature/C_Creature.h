@@ -58,8 +58,8 @@ protected:
 
 
 public:
-	FORCEINLINE UC_CreatureAbilitySystemComponent* GetWarriorAbilitySystemComponent() const { return CreatureAbilityComponent; }
-	FORCEINLINE UC_CreatureAttributeSet* GetWarriorAttributeSet() const { return CreatureAttributeSet; }
+	FORCEINLINE UC_CreatureAbilitySystemComponent* GetCreatureAbilitySystemComponent() const { return CreatureAbilityComponent; }
+	FORCEINLINE UC_CreatureAttributeSet* GetCreatureAttributeSet() const { return CreatureAttributeSet; }
 
 
 };

@@ -10,6 +10,7 @@
 class USpringArmComponent;
 class UCameraComponent;
 class UC_InputComponent;
+class UC_DA_InputConfig;
 struct FInputActionValue;
 class UC_PlayerCombatComponent;
 class UC_PlayerUIComponent;
@@ -66,7 +67,7 @@ private:
 #pragma region Input
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "CharacterData", meta = (AllowPrivateAccess = "true"))
-	UC_InputComponent* InputConfigDataAsset;
+	UC_DA_InputConfig* InputConfigDataAsset;
 
 
 

@@ -22,7 +22,7 @@ struct FDamageCapture
 
 };
 
-static const FDamageCapture& GetWarriorDamageCapture()
+static const FDamageCapture& GetCreatureDamageCapture()
 {
 	static FDamageCapture DamageCapture;
 	return DamageCapture;
@@ -31,9 +31,9 @@ static const FDamageCapture& GetWarriorDamageCapture()
 
 UGEExecCalc_DamageTaken::UGEExecCalc_DamageTaken()
 {
-	RelevantAttributesToCapture.Add(GetWarriorDamageCapture().AttackPowerDef);
-	RelevantAttributesToCapture.Add(GetWarriorDamageCapture().DefencePowerDef);
-	RelevantAttributesToCapture.Add(GetWarriorDamageCapture().DamageTakenDef);
+	RelevantAttributesToCapture.Add(GetCreatureDamageCapture().AttackPowerDef);
+	RelevantAttributesToCapture.Add(GetCreatureDamageCapture().DefencePowerDef);
+	RelevantAttributesToCapture.Add(GetCreatureDamageCapture().DamageTakenDef);
 
 
 }
@@ -58,7 +58,7 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 
 
 	float SourceAttackPower = 0.f;
-	ExecutionParams.AttemptCalculateCapturedAttributeMagnitude(GetWarriorDamageCapture().AttackPowerDef, EvaluateParameters, SourceAttackPower);
+	ExecutionParams.AttemptCalculateCapturedAttributeMagnitude(GetCreatureDamageCapture().AttackPowerDef, EvaluateParameters, SourceAttackPower);
 	//Debug::Print(TEXT("SourceAttackPower"), SourceAttackPower);
 
 
@@ -91,7 +91,7 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 
 	float TargetDefencePower = 0.0f;
 
-	ExecutionParams.AttemptCalculateCapturedAttributeMagnitude(GetWarriorDamageCapture().DefencePowerDef, EvaluateParameters, TargetDefencePower);
+	ExecutionParams.AttemptCalculateCapturedAttributeMagnitude(GetCreatureDamageCapture().DefencePowerDef, EvaluateParameters, TargetDefencePower);
 	//Debug::Print(TEXT("TargetDefencePower"), TargetDefencePower);
 
 
@@ -120,7 +120,7 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 	{
 		OutExecutionOutput.AddOutputModifier(
 			FGameplayModifierEvaluatedData(
-				GetWarriorDamageCapture().DamageTakenProperty,
+				GetCreatureDamageCapture().DamageTakenProperty,
 				EGameplayModOp::Override,
 				FinalDamageDone
 
