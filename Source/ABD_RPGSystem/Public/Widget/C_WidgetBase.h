@@ -18,9 +18,9 @@ class ABD_RPGSYSTEM_API UC_WidgetBase : public UUserWidget
 protected:
 	virtual void NativeOnInitialized() override;
 
-	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnOnwingHeroUIComponentInitialized"))
+	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnOnwingPlayerUIComponentInitialized"))
 
-	void BP_OnOnwingHeroUIComponentInitialized(UC_PlayerUIComponent* OwningHeroUIComponent);
+	void BP_OnOnwingPlayerUIComponentInitialized(UC_PlayerUIComponent* OwningPlayerUIComponent);
 
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnOnwingEnemyUIComponentInitialized"))
 

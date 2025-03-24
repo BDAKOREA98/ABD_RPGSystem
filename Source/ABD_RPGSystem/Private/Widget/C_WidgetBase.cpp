@@ -14,7 +14,7 @@ void UC_WidgetBase::NativeOnInitialized()
 	{
 		if (UC_PlayerUIComponent* PlayerUIComponent = PawnUIInterface->GetPlayerUIComponent())
 		{
-			BP_OnOnwingHeroUIComponentInitialized(PlayerUIComponent);
+			BP_OnOnwingPlayerUIComponentInitialized(PlayerUIComponent);
 		}
 	}
 }
