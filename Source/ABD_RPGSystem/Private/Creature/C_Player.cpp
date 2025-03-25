@@ -156,6 +156,8 @@ void AC_Player::Input_Move(const FInputActionValue& InputActionValue)
 		AddMovementInput(RightDirection, MovementVector.X);
 	}
 
+	
+
 }
 
 void AC_Player::Input_Look(const FInputActionValue& InputActionValue)

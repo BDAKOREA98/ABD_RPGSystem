@@ -34,11 +34,11 @@ struct FPlayerSpecialAbilitySet : public FPlayerAbilitySet
 {
 	GENERATED_BODY()
 
-	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta = (Categories = "Player.Colldown"))
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta = (Categories = "Player.Cooldown"))
 	TSoftObjectPtr<UMaterialInterface> SoftAbilityIconMaterial;
 
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
-	FGameplayTag AbilityColldownTag;
+	FGameplayTag AbilityCooldownTag;
 
 
 
