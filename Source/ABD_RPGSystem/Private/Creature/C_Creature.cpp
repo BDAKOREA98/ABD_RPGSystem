@@ -25,7 +25,7 @@ AC_Creature::AC_Creature()
 
 UAbilitySystemComponent* AC_Creature::GetAbilitySystemComponent() const
 {
-	return GetCreatureAbilitySystemComponent();
+	return GetAbilitySystemComponent();
 }
 
 UC_PawnCombatComponent* AC_Creature::GetPawnCombatComponent() const
