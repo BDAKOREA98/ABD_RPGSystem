@@ -22,10 +22,10 @@ public:
 
 
 	UFUNCTION(BlueprintCallable, Category = "Craeture|Ability", meta = (ApplyLevel = "1"))
-	void GrantHeroWeaponAbilities(const TArray<FPlayerAbilitySet>& InDefaultWeaponAbilities, const TArray<FPlayerSpecialAbilitySet> InDefaultSpecialWeaponAbilities, int32 ApplyLevel, TArray<FGameplayAbilitySpecHandle>& OutGrantAbilitySpecHandles);
+	void GrantPlayerWeaponAbilities(const TArray<FPlayerAbilitySet>& InDefaultWeaponAbilities, const TArray<FPlayerSpecialAbilitySet> InDefaultSpecialWeaponAbilities, int32 ApplyLevel, TArray<FGameplayAbilitySpecHandle>& OutGrantAbilitySpecHandles);
 
 	UFUNCTION(BlueprintCallable, Category = "Craeture|Ability")
-	void RemoveGrantedHeroWeaponAbilities(UPARAM(ref) TArray<FGameplayAbilitySpecHandle>& InSpecHandlesToRemove);
+	void RemoveGrantedPlayerWeaponAbilities(UPARAM(ref) TArray<FGameplayAbilitySpecHandle>& InSpecHandlesToRemove);
 
 	UFUNCTION(BlueprintCallable, Category = "Craeture|Ability")
 	bool TryActivateAbilityByTag(FGameplayTag AbilityTagToActivate);

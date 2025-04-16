@@ -5,6 +5,7 @@
 
 #include "GameplayTagContainer.h"
 #include "ScalableFloat.h"
+#include "Animation/AnimMontage.h"
 #include "StructTypes.generated.h"
 
 /**
@@ -70,6 +71,22 @@ struct FPlayerWeaponData
 	FScalableFloat WeaponBaseDamage;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+
+	FScalableFloat WeaponSpeed;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	TSoftObjectPtr<UTexture2D> SoftWeaponIconTexture;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	FName EquipSocketName;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	FName UnEquipSocketName;
+
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+	class UAnimMontage* EquipMontage;
+
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+	class UAnimMontage* UnEquipMontage;
 
 };

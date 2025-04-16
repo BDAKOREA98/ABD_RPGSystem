@@ -50,7 +50,7 @@ void UC_CreatureAbilitySystemComponent::OnAbilityInputReleassed(const FGameplayT
 
 }
 
-void UC_CreatureAbilitySystemComponent::GrantHeroWeaponAbilities(const TArray<FPlayerAbilitySet>& InDefaultWeaponAbilities, const TArray<FPlayerSpecialAbilitySet> InDefaultSpecialWeaponAbilities, int32 ApplyLevel, TArray<FGameplayAbilitySpecHandle>& OutGrantAbilitySpecHandles)
+void UC_CreatureAbilitySystemComponent::GrantPlayerWeaponAbilities(const TArray<FPlayerAbilitySet>& InDefaultWeaponAbilities, const TArray<FPlayerSpecialAbilitySet> InDefaultSpecialWeaponAbilities, int32 ApplyLevel, TArray<FGameplayAbilitySpecHandle>& OutGrantAbilitySpecHandles)
 {
 	if (InDefaultWeaponAbilities.IsEmpty())
 	{
@@ -92,7 +92,7 @@ void UC_CreatureAbilitySystemComponent::GrantHeroWeaponAbilities(const TArray<FP
 	}
 }
 
-void UC_CreatureAbilitySystemComponent::RemoveGrantedHeroWeaponAbilities(UPARAM(ref)TArray<FGameplayAbilitySpecHandle>& InSpecHandlesToRemove)
+void UC_CreatureAbilitySystemComponent::RemoveGrantedPlayerWeaponAbilities(UPARAM(ref)TArray<FGameplayAbilitySpecHandle>& InSpecHandlesToRemove)
 {
 	if (InSpecHandlesToRemove.IsEmpty())
 	{
