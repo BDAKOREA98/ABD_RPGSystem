@@ -44,8 +44,8 @@ namespace BD_GamePlayTags
 	UE_DEFINE_GAMEPLAY_TAG(Player_Ability_SpecailWeaponAbility_Heavy, "Player.Ability.SpecailWeaponAbility.Heavy");
 	UE_DEFINE_GAMEPLAY_TAG(Player_Ability_PickUp_Stone, "Player.Ability.PickUp.Stone");
 
-	UE_DEFINE_GAMEPLAY_TAG(Player_Colldown_SpecailWeaponAbility_Light, "Player.Colldown.SpecailWeaponAbility.Light");
-	UE_DEFINE_GAMEPLAY_TAG(Player_Colldown_SpecailWeaponAbility_Heavy, "Player.Colldown.SpecailWeaponAbility.Heavy");
+	UE_DEFINE_GAMEPLAY_TAG(Player_Cooldown_SpecailWeaponAbility_Light, "Player.Cooldown.SpecailWeaponAbility.Light");
+	UE_DEFINE_GAMEPLAY_TAG(Player_Cooldown_SpecailWeaponAbility_Heavy, "Player.Cooldown.SpecailWeaponAbility.Heavy");
 
 
 	UE_DEFINE_GAMEPLAY_TAG(Player_Weapon_Axe, "Player.Weapon.Axe");

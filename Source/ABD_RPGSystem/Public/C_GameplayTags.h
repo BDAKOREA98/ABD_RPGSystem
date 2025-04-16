@@ -45,8 +45,8 @@ namespace BD_GamePlayTags
 	ABD_RPGSYSTEM_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_PickUp_Stone);
 
 
-	ABD_RPGSYSTEM_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Colldown_SpecailWeaponAbility_Light);
-	ABD_RPGSYSTEM_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Colldown_SpecailWeaponAbility_Heavy);
+	ABD_RPGSYSTEM_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Cooldown_SpecailWeaponAbility_Light);
+	ABD_RPGSYSTEM_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Cooldown_SpecailWeaponAbility_Heavy);
 
 	ABD_RPGSYSTEM_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Weapon_Axe);
 
